@@ -1,0 +1,65 @@
+.desk{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: row;
+ flex-wrap: wrap;
+ gap: 10px;
+ 
+}
+.uncounted{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.card{
+    min-width: 90px;
+    height: 120px;
+    background-color: darkred;
+    color:antiquewhite;
+    border-radius: 20px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s;
+
+}
+.card:active{
+    transform: rotateY(180deg);
+}
+.visited{
+    background-color: darkgreen;
+}
+.score{
+    width: 150px;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+
+}
+.reset{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+}
+.clear{
+    background-color: darkblue;
+    width: 80px;
+    height: 40px;
+    outline: none;
+    border: 1px solid darkblue;
+    border-radius: 15px;
+    color:azure;
+    transition: transform 0.5s;
+}
+.clear:active{
+    transform: scale(1.3);
+}
