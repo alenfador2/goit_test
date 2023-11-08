@@ -27,12 +27,15 @@ for(const card of cards){
         }
     }
     uncounted.addEventListener('click', handleUncounted, { capture: true });
-    function clear() {
-        score.innerHTML = `Punkty: ${points = 0}`;
+
+}
+function clear() {
+    points = 0;
+        score.innerHTML = `Punkty: ${points}`;
+    cards.forEach(card => {
         if (card.classList.contains('visited')){
             card.classList.remove('visited');
-        };
+            }
+        })
     }
     button.addEventListener('click', clear);
-}
-
